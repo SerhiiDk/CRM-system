@@ -1,0 +1,16 @@
+.tbody__contact-item {
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.tel-icon:hover circle {
+  fill: var(--hover-contact);
+}
+
+.mail-icon:hover path {
+  fill: var(--hover-contact);
+}
+
+.fb-icon:hover path {
+  fill: var(--hover-contact);
+}

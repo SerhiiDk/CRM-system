@@ -1,0 +1,10 @@
+.common-modal__id-client {
+  display: block;
+  padding-left: 8px;
+  padding-top: 3px;
+  align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--color-silver-text);
+}

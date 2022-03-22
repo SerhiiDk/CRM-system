@@ -1,0 +1,144 @@
+.tbody__block {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 20px;
+  border-bottom: 1px solid var(--color-modal);
+  background: var(--color-white);
+}
+
+.tbody__content {
+  /* background: var(--color-white); */
+  border: 0;
+}
+
+.tbody__id {
+  width: 6.2%;
+  display: flex;
+  align-items: center;
+  color: var(--color-silver-text);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.tbody__fullName {
+  width: calc(27.9% + 5px);
+  display: flex;
+  align-items: center;
+}
+
+.tbody__createTime-elem,
+.tbody__changeTime-elem {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  width: 13%;
+}
+
+.tbody__createTime-elem-child,
+.tbody__changeTime-elem-child {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-left: 4px;
+  color: var(--color-silver-text);
+}
+
+/* .tbody__id,
+.tbody__fullName,
+.tbody__createTime-elem,
+.tbody__changeTime-elem,
+.tbody__clients-contact {
+  margin-right: auto;
+} */
+
+.tbody__action-elem {
+  display: flex;
+  align-items: center;
+  padding-left: 34px;
+}
+
+.tbody__clients-contact {
+  width: 108px;
+}
+
+.tbody__changeBtn,
+.tbody__deleteBtn {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  transition: 0.3s color ease-in-out;
+}
+
+.tbody__changeBtn {
+  padding-right: 32px;
+}
+
+.tbody__changeBtn--svg {
+  /* background-image: url(../img/changeBtn.svg); */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 17px;
+  height: 13px;
+}
+
+.tbody__changeBtn--svg,
+.tbody__deleteBtn--svg {
+  padding-right: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.tbody__changeBtn:hover {
+  color: var(--color-blue);
+}
+
+.tbody__deleteBtn:hover {
+  color: #f06a4d;
+}
+
+.tbody__changeBtn:active .tbody__deleteBtn--svg {
+  display: none;
+}
+
+/* Loader  */
+
+.common-loader {
+  width: 12px;
+  height: 12px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  border: 2px solid #f3f3f3;
+  margin-right: 2px;
+  border-radius: 50%;
+}
+
+.changed-btn--loader {
+  border-top: 2px solid var(--color-blue);
+}
+
+.delete-btn--loader {
+  border-top: 2px solid #f06a4d;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

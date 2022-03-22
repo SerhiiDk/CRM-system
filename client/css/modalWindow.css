@@ -1,0 +1,128 @@
+.modal-active {
+  animation: modal 0.3s ease-in-out 0.3s forwards;
+}
+
+@keyframes modal {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modal__btn--close {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  color: var(--color-modal);
+}
+
+.modal__heading {
+  display: flex;
+  font-size: 18px;
+  line-height: 25px;
+  align-items: center;
+  color: var(--color-black);
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.modal-input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  border-bottom: 1px solid var(--color-modal);
+  outline: 0;
+  width: 390px;
+  margin-bottom: 35px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--color-text);
+}
+
+.modal__required--surName {
+  position: absolute;
+  left: 60px;
+  top: -2px;
+  color: var(--color-blue);
+}
+
+.modal__required--name {
+  position: absolute;
+  left: 39px;
+  top: -2px;
+  color: var(--color-blue);
+}
+
+.modal__new--contact {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+  padding: 25px 30px;
+  margin: 0 -30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  /* background: var(--color-modal); */
+  background: rgb(200, 197, 209, 0.2);
+  margin-bottom: 25px;
+}
+
+.modal__btn--add-svg {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.modal__btn--add {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: var(--color-black);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  transition: color 0.3s linear;
+}
+
+.modal__btn--add:hover {
+  color: var(--color-blue);
+}
+
+.modal__btn--save {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 12px 40px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--color-white);
+  background: var(--color-blue);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+.modal__spinner {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.modal__btn--cancel {
+  display: block;
+  text-decoration: underline;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  line-height: 16px;
+}

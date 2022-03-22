@@ -1,0 +1,49 @@
+.contacts__content {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid var(--color-modal); */
+  margin-bottom: 25px;
+}
+
+.contacts__input {
+  display: block;
+  background: transparent;
+  padding-left: 12px;
+  border-top: 1px solid var(--color-modal) !important;
+  border-bottom: 1px solid var(--color-modal) !important;
+}
+
+.common-modal .contacts__input,
+.contacts__select {
+  display: block;
+  width: 220px;
+  height: 42px;
+  border: 0;
+}
+
+.contacts__select {
+  background: var(--color-contacts);
+  border: 1px solid var(--color-modal);
+
+  width: 123px;
+}
+
+.contacts__close-btn {
+  border: 0;
+  background: var(--color-contacts);
+  align-items: center;
+  padding: 10px 7px;
+  border: 1px solid var(--color-modal);
+  transition: border 0.3s linear;
+}
+
+.contacts__close-btn:hover {
+  border: 1px solid #f06a4d;
+}
+
+.contacts__close-btn--svg path {
+  transition: fill 0.3s linear;
+}
+.contacts__close-btn:hover .contacts__close-btn--svg path {
+  fill: #f06a4d;
+}
