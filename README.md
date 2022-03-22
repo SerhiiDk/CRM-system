@@ -1,4 +1,4 @@
-<h1>CRMs ystem</h1>
+<h1>CRM system</h1>
 
 <p>CRM system udviklet i JavaScript, hvor det er muligt at se alle klients informationen, man kan tilføje og ændre en klient. </p>
 
